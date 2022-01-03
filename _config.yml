@@ -35,26 +35,26 @@ subheader: Support and documentation for Odin
 meta_image: odin-meta.png
 
 # Social Links
-twitter_username: TheTeaGuns
-facebook_page:
-github_username: TeaGuns
-email: m@credd.in
-linkedin_page:
-instagram_username: 
+twitter_username: Mikaeld98471967
+#facebook_page:
+github_username: MikaelDDavidd
+email: mikaeldavidlopes@gmail.com
+#linkedin_page:
+instagram_username: kael_davidd
 
 
 # Navivation
 nav_item_one: Github
-nav_item_one_link: https://github.com/TeaGuns/odin
+nav_item_one_link: https://github.com/MikaelDDavidd
 
 nav_item_two: Twitter
-nav_item_two_link: https://twitter.com/TheTeaGuns
+nav_item_two_link: https://twitter.com/Mikaeld98471967
 
 nav_item_three: #
 nav_item_three_link: #
 
-nav_button: Return to Odin Home
-nav_button_link: https://teaguns.github.io/odin/
+nav_button: Home Page
+nav_button_link: https://mikaelddavidd.github.io/
 
 # More Help
 help_one_title: Odin Bugs
@@ -63,9 +63,9 @@ help_one_button: Github
 help_one_link: https://github.com/TeaGuns/odin/issues
 
 help_two_title: Twitter
-help_two_content: Feel free to tweet at me if you have suggestions for Odin. Or if you just want to say hi.
+help_two_content: Feel free to tweet at me if you have any needs on development area!
 help_two_button: Twitter
-help_two_link: https://twitter.com/theteaguns
+help_two_link: https://twitter.com/Mikaeld98471967
 
 # Build settings
 theme: minima
