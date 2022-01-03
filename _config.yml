@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Odin - A Jekyll Knowledge Base Theme
-description: Odin is a simple to setup and use Jekyll theme for help desks and knowledge bases. Hosts for free on Github Pages!
+title: KaelDev - A little bit about my job
+description: I'm an entusiast in the world of programming or codding this is my personal projects page.
 baseurl: /odin # the subpath of your site, e.g. /support
 url: https://teaguns.github.io # the base hostname AND PROTOCOL for your site, e.g. http://example.com
 permalink: /:categories/:title
@@ -57,9 +57,9 @@ nav_button: Home Page
 nav_button_link: https://mikaelddavidd.github.io/
 
 # More Help
-help_one_title: Odin Bugs
-help_one_content: If you find any bugs or problems with this theme, please open an issue over on Github.
-help_one_button: Github
+help_one_title: Wanna see More?
+help_one_content: If you want to you can take a look on my projects more closely.
+help_one_button: Projects
 help_one_link: https://github.com/TeaGuns/odin/issues
 
 help_two_title: Twitter
