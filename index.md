@@ -8,9 +8,10 @@ Here it is where everything starts.
 
 At first I started it all as an entusiast and so I decided to get more into it so here I am.
 
-# Header 1
+# Status Saver
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+This was my first step into the codding universe... and app that you can use to download midia from 
+the daily post that people do on WhatsApp Appp.
 
 ## Header 2
 
