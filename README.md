@@ -1,209 +1,184 @@
-# Neumorphism <!-- omit in toc -->
+# Agency Jekyll Theme
 
-> Neumorphism designed Jekyll theme for personal websites, portfolios and resumes.
+[![RubyGems Downloads](https://img.shields.io/gem/dt/jekyll-agency.svg)](https://rubygems.org/gems/jekyll-agency)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue)](/LICENSE.txt)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip_me-green?logo=paypal)](https://www.paypal.me/raviriley)
+[![template button](https://img.shields.io/badge/Generate_theme_from_template-2ea44f)][generate]
+[![Featured on Jekyll-Themes.com](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/agency-jekyll-theme/)
 
-* Featured on [JAMstack Themes](https://jamstackthemes.dev/theme/jekyll-neumorphism/)
-* Featured on [Jekyll Themes](https://jekyll-themes.com/neumorphism/)
-* Featured on [jekyllthemes](http://jekyllthemes.org/themes/neumorphism/)
+## Preview - click for live demo
 
-[![Open Issues](https://badgen.net/github/open-issues/longpdo/neumorphism)](https://github.com/longpdo/neumorphism/issues)
-[![License](https://badgen.net/github/license/longpdo/neumorphism)](LICENSE)
-<a href="https://jekyll-themes.com">
-    <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+[![screenshot](/screenshot.PNG)][demo-page]
 
-[View Demo](https://longpdo.github.io/neumorphism/) · [Report Bug](https://github.com/longpdo/neumorphism/issues) · [Request Feature](https://github.com/longpdo/neumorphism/issues)
+## Warning
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents <!-- omit in toc -->
+> :warning: **Notice for those using legacy Formspree contact forms:** :warning:
+>
+> Email-based forms are being [phased out](https://help.formspree.io/hc/en-us/articles/360056076314) by Formspree. [#11](https://github.com/raviriley/agency-jekyll-theme/pull/11) updated this theme to use the [new Formspree structure](https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam). Click [here](https://help.formspree.io/hc/en-us/articles/360056076314) for instructions on updating your site's form.
 
-* [About The Project](#about-the-project)
-  * [Built With](#built-with)
-  * [Features](#features)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-  * [Personalize and Customize](#personalize-and-customize)
-    * [_config.yml](#_configyml)
-    * [Github Metadata Plugin](#github-metadata-plugin)
-    * [_data/*.yml](#_datayml)
-    * [Particles.js](#particlesjs)
-* [Contributing](#contributing)
-* [License](#license)
-* [Acknowledgements](#acknowledgements)
+## About
 
-<!-- ABOUT THE PROJECT -->
+This is the [Agency Bootstrap theme](https://startbootstrap.com/themes/agency/), converted to a gem-based Jekyll theme with GitHub Pages support.
 
-## About The Project
+While this has been done before, [here](https://github.com/y7kim/agency-jekyll-theme), [here](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency), and [here](https://github.com/laklau/agency-jekyll-theme/), these are outdated and have not been updated or maintained for years. I built this theme from the most recent Bootstrap source.
 
-[![Project Screenshot][product-screenshot]](https://longpdo.github.io/neumorphism/)
+I also added a lot of new features that go beyond the original theme's capabilities:
 
-This is a personal website built with `Jekyll` and hosted on `Github Pages`, which is based on the new `Neumorphism` design trend and was developed with a mobile-first approach. This can be used by developers, who want to showcase their resume and portfolio. If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
+- GitHub Pages support
+- [template repo][template] to get up and running in minutes
+- contact form functionality powered by [Formspree.io](https://formspree.io)
+- custom pages
+- 404 page
+- legal/Privacy Policy page
+- Google Analytics support
+- Markdown support
+- custom images
+- logo support (instead of just title text)
+- automatically updating copyright years
+- custom navigation bar, even without the header image(s)
+- customizable footer
+- custom accent color and dark/light colors
+- horizontal scrolling support for client section
+<!--
+- custom colors with automatic gradient generation (coming soon)
+- site title logo text font customization (coming soon)
+- horizontal scrolling support for portfolio section (coming soon)
+- about section (different from the timeline) -->
 
-### Built With
+The Jekyll structure of this theme includes:
 
-* [Jekyll](https://jekyllrb.com/)
+- `_portfolio` files - what generate the portfolio grid. YAML front matter handles all the details
+- the `page` layout allows custom pages, as seen in the legal and 404 pages
+- `sitetext.yml` enables complete customization of all site text
+- `navigation.yml` enables fully customizable navigation
+- `style.yml` enables fully customizable colors, background images, and other style-related things
 
-### Features
+**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/raviriley) to continue developing and maintaining it.**
 
-* Mobile-First Responsive Design
-* Animated preloader animation
-* Landing Page with animated background with [particles.js](https://vincentgarreau.com/particles.js/), a Typing Carousel and animated social icons
-* Dark Neumorphism Design on main content
-* [Animations On Scroll](https://michalsnik.github.io/aos/)
-* Filterable *Skills* word cloud
-* [Github's API](https://developer.github.com/v3/) automatically populating the *Open Source Projects* section
-* Gulp dev workflow with [BrowserSync](https://browsersync.io/), [Autoprefixer](https://autoprefixer.github.io/) and `JS` & `SCSS` minifying.
-* [Google Analytics](https://analytics.google.com/)
+<div align="center">
 
-<!-- GETTING STARTED -->
+[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/raviriley)
 
-## Getting Started
+</div>
 
-To get a local copy up and running follow these simple steps.
+## Installation
 
-`The commands and instructions I provide are for MacOS - please look up the specific commands for your OS on your own.`
+There are three ways to install this theme:
 
-### Prerequisites
+1. As a gem-based theme
+2. Use the [starter template][template] (best for GitHub Pages)
+3. As a remote theme
 
-* [NodeJS](https://nodejs.org/en/)
+#### 1. Gem-based Theme Installation
 
-```sh
-brew install node
-```
+Replace the contents of your `_config.yml` file with the sample [\_config.yml](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml).
 
-If you need to switch between Node versions regurlarly, I would recommend to install Node via [Node Version Manager](https://github.com/nvm-sh/nvm/blob/master/README.md#manual-install).
-
-* [Jekyll](https://jekyllrb.com/)
+Install the gem with:
 
 ```sh
-gem install bundler jekyll
+$ bundle add jekyll-agency
 ```
 
-For more information, refer to [this](https://jekyllrb.com/docs/installation/).
+Or manually.
 
-* [Yarn](https://yarnpkg.com/)
+1. Add this line to your Jekyll site's `Gemfile`:
+   ```ruby
+   gem "jekyll-agency"
+   ```
+2. Then execute:
+   ```sh
+   $ bundle install
+   ```
+
+#### 2. Using the [Starter Template][template]
+
+This is the fastest and easiest way to get up and running on GitHub Pages.
+
+Simply generate your own repository by clicking the button below. Then replace the sample content with your own and configure for your needs.
+
+<div align="center">
+
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)][generate]
+
+</div>
+    
+#### 3. Remote Theme Installation
+
+Replace your `_config.yml` file with the starter [\_config.yml](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml).
+
+Replace your `Gemfile` with the starter [Gemfile](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/Gemfile).
+
+Then install gems.
 
 ```sh
-npm install -g yarn
+$ bundle install
 ```
 
-### Installation
+<!--
+## Documentation and Usage
 
-> Recommended way: If you want to contribute to this theme or open issues due to problems implementing this on your own, I would recommend forking the repository directly. This makes it easier for me to solve open issues and questions or check pull requests.
+**TODO:** Write usage instructions here. Describe available layouts, includes, or assets.
 
-1.1: Fork the repository (using the `Fork` button at the top) and then clone the repository
+navheader is used only for the home page. nav is used everywhere else.
 
-```sh
-# Replace {YOUR_USERNAME} with your actual username
-git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
-```
+Layouts:
 
-or
+Includes:
 
-1.2: Create your own repository (using the green `Use this template` button at the top) and then clone the repository
-
-```sh
-# Replace {YOUR_USERNAME}, {YOUR_REPOSITORY} with the actual values
-git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}.git
-```
-
-2: Change directory into neumorphism
-
-```sh
-cd neumorphism
-```
-
-3: Install dependencies
-
-```sh
-yarn
-```
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-* Run and develop locally with live server at `http://localhost:4000`, this will also build production-ready `JS` and `SCSS` assets with every change
-
-```sh
-gulp
-```
-
-* After committing and pushing, see the `Settings` page of your repository to see where your site is published at via `Github Pages`.
-
-### Personalize and Customize
-
-#### _config.yml
-
-Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/longpdo/neumorphism/blob/master/docs/config.md).
-
-#### Github Metadata Plugin
-
-If you want to automatically have your Github repositories pulled for the *Open Source Projects* section, then you also need to authenticate yourself for the Github Metadata plugin to work.
-
-You need to generate a new personal access token on GitHub:
-
-* Go to the [Github Token site](https://github.com/settings/tokens/new)
-* Select the scope `public_repository`, and add a description.
-* Confirm and save the settings. Copy the token you see on the page.
-* Create a `.env` file inside your repository and add your generated `JEKYLL_GITHUB_TOKEN`:
-
-```text
-JEKYLL_GITHUB_TOKEN=0YOUR0GENERATED0TOKEN0
-```
-
-To complete the configuration for the Github Metadata plugin, you also need to change the value of `repository` inside `_config.yml`. After this, you should the Github Metadata plugin should work properly.
-
-For optimal results, you should make sure, that every Github project, you want included on this portfolio, has added following informations on Github:
-
-* Description
-* Homepage link, if there is a live version of it
-* Topics
-
-Example:
-![Github Repository Information Example][github-repo-info]
-
-#### _data/*.yml
-
-Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
-
-#### Particles.js
-
-Edit `assets/particles.json` to customize the landing page backgorund animation. For more information, refer to [this](https://github.com/VincentGarreau/particles.js/#options).
-
-<!-- CONTRIBUTING -->
+-->
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+This project is intended to be a welcoming space for collaboration. If you have an idea, suggestion, feature request, etc., feel free to open an issue or pull request.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+For bug reports, follow the provided template.
 
-<!-- LICENSE -->
+#### Improvements - Up for Grabs
+
+- [ ] multiple language support (~~Spanish~~, Chinese, Arabic, etc.)
+- [ ] customizable background coloring for each section
+- [x] ~~custom background images~~
+
+## Development
+
+To set up your environment to develop this theme, clone this repo or your fork.
+
+```sh
+$ git clone https://github.com/raviriley/agency-jekyll-theme.git
+$ cd agency-jekyll-theme
+```
+
+Then run:
+
+```sh
+$ bundle install
+```
+
+To test the theme, run this. (Using the `--trace` flag for verbose errors.)
+
+```sh
+$ bundle exec jekyll serve --trace
+```
+
+Then open your browser at:
+
+- http://localhost:4000
+
+Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-<!-- ACKNOWLEDGEMENTS -->
+<!--
 
-## Acknowledgements
+## Example Implementations
 
-* [Font Awesome](https://fontawesome.com/)
-* [Normalize.css](https://necolas.github.io/normalize.css/)
-* Based Preloader on [Codrin Pavel's](https://codepen.io/zerospree/pen/aCjAz) version
-* Typing Carousel by [Gregory Schier](https://codepen.io/gschier/pen/jkivt)
-* Social Button Animation by [Stéphane Lyver](https://codepen.io/wouwi/pen/Lwrmi)
-* Adapted [Damian Jankowski's](https://codepen.io/dolaron/pen/rNadmOE) color palette for the neumorphism design
-* Based Timeline on [Krishna Babu's](https://codepen.io/krishnab/pen/OPwqbW) version
+- [CV Enterprises](https://cventerprises.org)
+- [Mortazavi Lab at UC Irvine](https://mortazavilab.github.io/)
 
-<!-- MARKDOWN LINKS & IMAGES -->
+-->
 
-[product-screenshot]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/screenshot.gif
-[github-repo-info]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/github-repo-info.png
+[demo-page]: https://raviriley.github.io/agency-jekyll-theme-starter/
+[template]: https://github.com/raviriley/agency-jekyll-theme-starter
+[generate]: https://github.com/raviriley/agency-jekyll-theme-starter/generate
