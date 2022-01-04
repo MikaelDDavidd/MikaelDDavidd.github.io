@@ -19,7 +19,7 @@
 
   <title>
     
-      Subcategory One | Odin - A Jekyll Knowledge Base Theme
+      Changing Odin's Base Content | Odin - A Jekyll Knowledge Base Theme
     
   </title>
 
@@ -86,61 +86,91 @@
 
 
 
-
 <div class="container-full">
-  <div class="container grid-xl">
-    <div class="mt-12 show-md"></div>
-    <div class="mt-8"></div>
-    <div class="columns negative-m-xl">
-      <div class="column col-12">
-        <ul class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="https://http://localhost:4000/odin">Help Center Home</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="https://http://localhost:4000/odin/using-subcategories">Using Subcategories</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#">Subcategory One</a>
-          </li>
-        </ul>
-        <h2 class="text-light text-bold">Subcategory One</h2>
-        <p class="text-light mb-2">This is your first subcategory!</p>
-      </div>
-      
+    <div class="container grid-xl">
+      <div class="mt-12 show-md"></div>
+      <div class="mt-8"></div>
+      <div class="columns negative-m-xl">
         <div class="column col-12">
-  <a href="/odin/subcategory-one/welcome-to-odin">
-    <div class="card card-link my-1" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
-      <div class="card-body">
-        <div class="columns col-x-align">
-          <div class="column col col-sm-12">
-            <h5 class="text-semibold m-0">Subcategory Post</h5>
-            <p class="m-0 text-dark">A quick overview of Odin to get you started</p>
-          </div>
-          <div class="column col-auto hide-sm">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="http://localhost:4000/odin">Help Center Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="../customizing-odin">Customizing Odin</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Changing Odin's Base Content</a>
+            </li>
+          </ul>
+          <h2 class="text-light text-bold">Changing Odin's Base Content</h2>
+          <p class="text-light mb-0">Adding your brand name, links, etc</p>
+        </div>
+        <div class="column col-12">
+          <div class="card">
+            <div class="card-body">
+                
+                
+                <div class="flex-vertical-center mb-4">
+                  <figure class="avatar d-inline-block" style="align-items: center;">
+                    <img  src="../assets/mac.png" alt="...">
+                  </figure>
+                  <div class="ml-2">
+                    <p class="text-dark text-small mb-0">Written by <span class="text-primary">Mac Reddin</span></p>
+                    <p class="text-dark text-small text-italic mb-0">
+
+
+    2 minute read
+</p>
+                  </div>
+                </div>
+                
+
+              <hr />
+
+<p><em>This article is a stub, more info coming soon. Some sections should be cleaned up.</em></p>
+
+<p>You can change virtually all of Odin’s content from the <code class="highlighter-rouge">_config.yml</code> file. There are three things you cannot change from here, which need to be changed elsewhere - <a href="">colors</a>, <a href="">fonts</a>, and <a href="">categories</a>. Everything else is edited from this file.</p>
+
+<h5 id="base-content">Base Content</h5>
+
+<p>At the top of <code class="highlighter-rouge">_config.yml</code> you’ll find a number of base settings you should change. These include your site title and description, as well as your brand logo and name. It also includes options to change the home page header and subheader.</p>
+
+<h5 id="navigation-links">Navigation Links</h5>
+<p>Out of the box, Odin supports 3 custom navigation links + a ‘return home’ button. Each link supports a name and a link. If you want to disable a link, just add <code class="highlighter-rouge">#</code> to both options for that link.</p>
+
+<p>The navigation button can be edited by changing the <code class="highlighter-rouge">nav_button</code> and <code class="highlighter-rouge">nav_button_link</code> options.</p>
+
+<h5 id="more-help-section">More Help Section</h5>
+
+<p>The more help section shows up under your list of categories on your homepage, as well as under each article. This section supports 0, 1 or 2 content blocks, which can be edited from the # More Help section of the <code class="highlighter-rouge">_config.yml</code> file. These sections are a great way to add links to your email, twitter, or other methods for users to reach you for support.</p>
+
+<p><strong>help_one_title</strong> - the header title for this section</p>
+
+<p><strong>help_one_content</strong> - the extended text for this help section. Works best if under 200 characters.</p>
+
+<p><strong>help_one_button</strong> - the text to show for the link in this help section</p>
+
+<p><strong>help_one_link</strong> - where the help section button should take users</p>
+
+<h5 id="social-links">Social Links</h5>
+
+<p>The social links section defines which social links show in the footer. By default Odin supports Instagram, Twitter, Facebook, LinkedIn, Email, and Github. Simply add the relevant social item to the right section, or add <code class="highlighter-rouge">#</code> if you don’t want that social item to show in the footer.</p>
+
+<hr />
+
+<p>After making any changes to the above, run <code class="highlighter-rouge">jekyll serve</code> to see the changes locally. If you’re satisfied with your changes, run <code class="highlighter-rouge">jekyll build</code> and then push your changes to your repo.</p>
+
+
+
+              
             
-            
-            <div class="flex-vertical-center">
-              <figure class="avatar d-inline-block" style="align-items: center;">
-                <img  src="/odin/assets/mac.png" alt="...">
-              </figure>
-              <div class="ml-2">
-                <p class="text-dark text-small mb-0">Written by <span class="text-primary">Mac Reddin</span></p>
-              </div>
+
+
             </div>
-            
-           
           </div>
         </div>
-      </div>
-    </div>
-  </a>
-</div>
-
-
-
-      
-      
+        
 <div class="column col-12 text-center mt-16">
   <h4>Still Need Help?</h4>
 </div>
@@ -157,6 +187,7 @@
   <a href="https://twitter.com/theteaguns" target="_blank">Twitter <i class='uil uil-arrow-right arrow-hover'></i></a>
 </div>
 
+      </div>
     </div>
   </div>
 
