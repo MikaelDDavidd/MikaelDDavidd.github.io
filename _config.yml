@@ -5,6 +5,7 @@ description: My personal portifolio.
 show_downloads: false
 google_analytics: UA-108144808-1
 color-scheme: auto
+favicon: true
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
