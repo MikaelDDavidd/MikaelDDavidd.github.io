@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Link to my app](./another-page.html).
+[Link to my app](https://play.google.com/store/apps/details?id=dev.kael.whatsappstatussaver).
 
 Here it is where everything starts.
 
